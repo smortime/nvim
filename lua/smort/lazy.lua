@@ -30,11 +30,19 @@ require("lazy").setup({
 
 	-- Theme
 	{
-		'folke/tokyonight.nvim',
+		'shaunsingh/nord.nvim',
 		config = function()
-			vim.cmd.colorscheme 'tokyonight-night'
+			vim.cmd.colorscheme 'nord'
 		end,
 	},
+
+    -- Whats the status capn'?
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = {
+            { 'kyazdani42/nvim-web-devicons', opt = true },
+        }
+    },
 
 	-- LET THERE BE LSP THAT WORKS
 	{
@@ -42,22 +50,38 @@ require("lazy").setup({
 		branch = 'v1.x',
 		dependencies = {
 			-- LSP Support
-			{'neovim/nvim-lspconfig'},             -- Required
-			{'williamboman/mason.nvim'},           -- Optional
-			{'williamboman/mason-lspconfig.nvim'}, -- Optional
+			{'neovim/nvim-lspconfig'},             
+			{'williamboman/mason.nvim'},        
+			{'williamboman/mason-lspconfig.nvim'},
 
 			-- Autocompletion
-			{'hrsh7th/nvim-cmp'},         -- Required
-			{'hrsh7th/cmp-nvim-lsp'},     -- Required
-			{'hrsh7th/cmp-buffer'},       -- Optional
-			{'hrsh7th/cmp-path'},         -- Optional
-			{'saadparwaiz1/cmp_luasnip'}, -- Optional
-			{'hrsh7th/cmp-nvim-lua'},     -- Optional
+			{'hrsh7th/nvim-cmp'},
+			{'hrsh7th/cmp-nvim-lsp'},
+			{'hrsh7th/cmp-buffer'}, 
+			{'hrsh7th/cmp-path'},
+			{'saadparwaiz1/cmp_luasnip'},
+			{'hrsh7th/cmp-nvim-lua'},
 
 			-- Snippets
-			{'L3MON4D3/LuaSnip'},             -- Required
-			{'rafamadriz/friendly-snippets'}, -- Optional
+			{'L3MON4D3/LuaSnip'},
+			{'rafamadriz/friendly-snippets'},
 		}
 	},
+
+    -- GO GO GADGET
+    {
+        "ray-x/go.nvim",
+        dependencies = {
+            "ray-x/guihua.lua",
+            "neovim/nvim-lspconfig",
+            "nvim-treesitter/nvim-treesitter",
+        },
+        config = function()
+            require("go").setup()
+        end,
+        event = {"CmdlineEnter"},
+        ft = {"go", 'gomod'},
+        build = ':lua require("go.install").update_all_sync()' -- if you need to install/update all binaries
+    },
 
 }, {})
