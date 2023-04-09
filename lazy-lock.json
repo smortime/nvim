@@ -8,7 +8,7 @@
   "friendly-snippets": { "branch": "main", "commit": "25ddcd96540a2ce41d714bd7fea2e7f75fea8ead" },
   "go.nvim": { "branch": "master", "commit": "96e5768fd4b237207d15024c91ffc5229f512ce0" },
   "guihua.lua": { "branch": "master", "commit": "a19ac4447021f21383fadd7a9e1fc150d0b67e1f" },
-  "lazy.nvim": { "branch": "main", "commit": "690f9e88e2a7dc92bcb0cca85f778a3e99fe1f7e" },
+  "lazy.nvim": { "branch": "main", "commit": "887eb75591520a01548134c4623617b639289d0b" },
   "lsp-zero.nvim": { "branch": "v1.x", "commit": "d23b2db28ea911eed498b2f5710119dc7053e2ba" },
   "lualine.nvim": { "branch": "master", "commit": "e99d733e0213ceb8f548ae6551b04ae32e590c80" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "2b811031febe5f743e07305738181ff367e1e452" },
