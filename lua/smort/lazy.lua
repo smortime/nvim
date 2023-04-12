@@ -35,6 +35,10 @@ require("lazy").setup({
 			vim.cmd.colorscheme 'nord'
 		end,
 	},
+    -- Theme for sharing screen... easier to read
+	{
+		'folke/tokyonight.nvim',
+	},
 
     -- Whats the status capn'?
     {
