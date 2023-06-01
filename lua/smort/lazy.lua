@@ -31,13 +31,17 @@ require("lazy").setup({
 	-- Theme
 	{
 		'shaunsingh/nord.nvim',
-		config = function()
+		 config = function()
+            vim.g.nord_italic = false
 			vim.cmd.colorscheme 'nord'
-		end,
+		 end,
 	},
     -- Theme for sharing screen... easier to read
 	{
 		'folke/tokyonight.nvim',
+        -- config = function()
+	    --	vim.cmd.colorscheme 'tokyonight-moon'
+		-- end,
 	},
 
     -- Whats the status capn'?
