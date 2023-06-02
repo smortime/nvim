@@ -36,6 +36,7 @@ require("lazy").setup({
 			vim.cmd.colorscheme 'nord'
 		 end,
 	},
+
     -- Theme for sharing screen... easier to read
 	{
 		'folke/tokyonight.nvim',
@@ -50,6 +51,12 @@ require("lazy").setup({
         dependencies = {
             { 'kyazdani42/nvim-web-devicons', opt = true },
         }
+    },
+
+    -- Pls buff
+    {
+        'akinsho/bufferline.nvim', 
+        version = "*", 
     },
 
 	-- LET THERE BE LSP THAT WORKS
