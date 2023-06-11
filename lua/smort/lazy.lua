@@ -29,12 +29,19 @@ require("lazy").setup({
 	},
 
 	-- Theme
+    {
+        'EdenEast/nightfox.nvim',
+        -- config = function()
+        --    vim.cmd.solorscheme 'nordfox'
+        -- end,
+    },
+
 	{
 		'shaunsingh/nord.nvim',
-		 config = function()
-            vim.g.nord_italic = false
-            vim.cmd.colorscheme 'nord'
-		 end,
+		 -- config = function()
+         --   vim.g.nord_italic = false
+         --   vim.cmd.colorscheme 'nord'
+		 -- end,
 	},
 
     -- Theme for sharing screen... easier to read
