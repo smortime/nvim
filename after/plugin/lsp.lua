@@ -4,7 +4,7 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
   'rust_analyzer',
-  'pyright',
+  -- 'pyright',
 })
 
 -- Fix Undefined global 'vim'
