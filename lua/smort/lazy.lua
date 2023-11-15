@@ -103,12 +103,12 @@ require("lazy").setup({
         end,
         event = {"CmdlineEnter"},
         ft = {"go", 'gomod'},
-        build = ':lua require("go.install").update_all_sync()' -- if you need to install/update all binaries
+        build = ':lua require("go.install").update_all_sync()', -- if you need to install/update all binaries
     },
 
     -- Rusty
     {
-        "simrat39/rust-tools.nvim"
-    }
+        'simrat39/rust-tools.nvim',
+    },
 
 }, {})
