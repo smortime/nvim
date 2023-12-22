@@ -1,8 +1,13 @@
 local rt = require("rust-tools")
 
+analyzer = '/home/smortimer/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/rust-analyzer'
+if vim.loop.os_uname().sysname == "Darwin" then
+    analyzer = '/Users/smortimer/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rust-analyzer'
+end
+
 rt.setup({
     server = {
-        cmd = { '/home/smortimer/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/rust-analyzer' },
+        cmd = { analyzer },
         on_attach = function(_, bufnr)
             -- Hover actions
             vim.keymap.set("n", "<C-space>", rt.hover_actions.hover_actions, { buffer = bufnr })
