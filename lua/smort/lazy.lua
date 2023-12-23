@@ -28,6 +28,13 @@ require("lazy").setup({
 	end,
 	},
 
+    -- Navigation
+    {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        dependencies = { {"nvim-lua/plenary.nvim"} }
+    },
+
 	-- Theme
     {
         'EdenEast/nightfox.nvim',
