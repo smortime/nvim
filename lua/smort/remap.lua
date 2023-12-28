@@ -25,6 +25,7 @@ vim.keymap.set("n", "<C-l>", "<C-w>l")
 vim.keymap.set("n", "<left>", "<cmd>bnext<CR>")
 vim.keymap.set("n", "<right>", "<cmd>bprev<CR>")
 vim.keymap.set("n", "<leader>b", "<c-^>")
+vim.keymap.set("n", "<leader>cb", "<cmd>bd<CR>")
 
 -- Random Navigation
 vim.keymap.set("n", "<leader>p", "<c-o>")
