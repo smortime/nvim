@@ -57,7 +57,7 @@ require('go').setup({
     -- default: false
     show_variable_name = true,
     -- prefix for parameter hints
-    parameter_hints_prefix = " ",
+    parameter_hints_prefix = "fn ",
     show_parameter_hints = true,
     -- prefix for all the other hints (type, chaining)
     other_hints_prefix = "=> ",
