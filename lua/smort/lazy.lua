@@ -30,9 +30,14 @@ require("lazy").setup({
 
     -- Navigation
     {
-        "ThePrimeagen/harpoon",
+        'ThePrimeagen/harpoon',
         branch = "harpoon2",
-        dependencies = { {"nvim-lua/plenary.nvim"} }
+        dependencies = { {'nvim-lua/plenary.nvim'} }
+    },
+
+    -- Session Manager
+    {
+        'rmagatti/auto-session',
     },
 
 	-- Theme
