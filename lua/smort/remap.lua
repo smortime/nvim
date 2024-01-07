@@ -1,7 +1,7 @@
 -- ctrl BS is weird between things idk
-vim.api.nvim_set_keymap('i', '<C-H>', '<C-W>', {noremap = true})
+vim.api.nvim_set_keymap('i', '<C-H>', '<C-W>', { noremap = true })
 
-vim.g.mapleader =  " "
+vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>w", vim.cmd.w)
 
@@ -33,3 +33,9 @@ vim.keymap.set("n", "<leader>p", "<c-o>")
 -- Random stuff that starts or ends in INSERT
 vim.keymap.set("i", "<C-BS>", "<Esc>cvb")
 vim.keymap.set("n", "<CR>", "ciw")
+
+-- Undo breakpoints
+vim.keymap.set("i", ",", ",<c-g>u")
+vim.keymap.set("i", ".", ".<c-g>u")
+vim.keymap.set("i", "!", "!<c-g>u")
+vim.keymap.set("i", "?", "?<c-g>u")
